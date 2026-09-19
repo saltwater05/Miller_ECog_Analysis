@@ -1,1 +1,6 @@
 # Miller_ECog_Analysis
+This project involves preprocessing and analysing the faceshouses dataset from Kai Miller's publicly available ECog dataset which I found on Neuromatch Academy's website, following parts of the example project given by the Neuromatch course. The purpose of this project is to apply the concepts and techniques taught throughout Neuromatch.
+
+The data is cleaned, filtered and averaged. Bad channels are weeded out, good channels are selected for. The good channels are then assessed to see which are responding to faces or houses. From there, their performance is evaluated and ranked. 
+
+I also wanted to see if a logistic regression decoder model would outperform the subject keypress performance in dataset 2 including the noisy image trials. In these trials subjects were shown images of faces or houses with varying levels of noise. I trained models on the pooled results and the subject-averaged results. The pooled-results and subject-averaged results both showed statistically significant difference between model and subject performance, with the subjects outperforming the model's prediction. However, the pooled-results treat each sample as independent, and the subect-averaged has a low sample size with only 5 subjects. Therefore but tests lack statistical power. 
